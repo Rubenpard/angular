@@ -1,0 +1,165 @@
+<<!-- menu.component.html -->
+
+<datospersonales *ngIf="mostrarDatospersonales" [menu]="this"></datospersonales>
+
+<div class="contenedor-menu">
+  <div class="contenedor-planta">
+    <div class="planta">
+    <div class="hojas">
+       <div class="hoja-izquierda hoja-verdeoscuro"></div>  
+       <div class="hoja-derecha hoja-verdeoscuro"></div>
+       <div class="hoja-izquierda hoja-verdeoscuro"></div>  
+       <div class="hoja-derecha hoja-verdeoscuro"></div>
+       <div class="hoja-izquierda hoja-verdeoscuro"></div>  
+       <div class="hoja-derecha hoja-verdeoscuro"></div>
+       <div style="height: 80px;"></div>  
+       <div></div>
+       <div class="tallo hoja-verdeoscuro"></div>  
+    </div>
+    <div style="margin-top: -200px; rotate: 20deg; margin-left: 50px;" class="hojas">
+      <div class="hoja-izquierda hoja-verdeamarillo"></div>  
+      <div class="hoja-derecha hoja-verdeamarillo"></div>
+      <div class="hoja-izquierda hoja-verdeamarillo"></div>  
+      <div class="hoja-derecha hoja-verdeamarillo"></div>
+      <div class="hoja-izquierda hoja-verdeamarillo"></div>  
+      <div class="hoja-derecha hoja-verdeamarillo"></div>
+      <div style="height: 50px;"></div>  
+      <div></div>
+      <div class="tallo hoja-verdeoscuro"></div>  
+   </div>
+   <div style="margin-top: -200px; rotate: -20deg; margin-left: -50px;" class="hojas">
+    <div class="hoja-izquierda hoja-verdeclaro"></div>  
+    <div class="hoja-derecha hoja-verdeclaro"></div>
+    <div class="hoja-izquierda hoja-verdeclaro"></div>  
+    <div class="hoja-derecha hoja-verdeclaro"></div>
+    <div class="hoja-izquierda hoja-verdeclaro"></div>  
+    <div class="hoja-derecha hoja-verdeclaro"></div>
+    <div style="height: 50px;"></div>  
+    <div></div>
+    <div class="tallo hoja-verdeoscuro"></div>  
+ </div>
+</div>
+<div class="maceta">
+ <div class="maceta-borde"></div>
+ <div class="maceta-base"></div>
+ <div class="sombra-planta"></div>
+</div>
+  </div>
+  <div class="grid-container">
+  
+    <a class="dp" (click)="toggleDatospersonales()"  href="#" >
+      <div class="grid-item">
+          <div>
+            <div class="dp-post-it">
+              <p class="dp-post-it-text">DATOS
+                <span style="font-size: 15px;">PERSONALES</span></p>
+            </div>
+          </div>
+          <div style="margin-top: 25px;"> 
+          <div style="margin-left: 20px;" class="dp-folio"></div>
+          <div class="dp-folio"></div>
+          <div class="dp-folio"></div>
+          <div class="dp-folio"></div>
+          <div class="dp-folio"></div>
+          <div class="dp-folio"></div>
+          <div class="dp-folio"></div>
+          <div class="dp-folio"></div>
+          <div class="dp-folio"></div>
+      </div>
+      <div>
+          <div class="dp-bandeja">
+              <div class="dp-bandeja-bgcolor dp-bandeja-brtop"></div>
+              <div><div id="curved-corner-bottomleft"></div></div>
+              <div><div id="curved-corner-bottomright"></div></div>
+              <div class="dp-bandeja-bgcolor dp-bandeja-left"></div>
+              <div class="dp-bandeja-bgcolor dp-bandeja-brbottom"></div>
+              <div class="dp-bandeja-bgcolor dp-bandeja-bottom"></div>
+              <div class="dp-bandeja-bgcolor dp-bandeja-bottom"></div>
+              <div class="dp-bandeja-bgcolor dp-bandeja-brright"></div>
+              <div>
+                <div class="dp-bandeja-bgcolor dp-bandeja-patas"></div>
+              </div>
+              <div></div>
+              <div></div>
+              <div>
+                <div class="dp-bandeja-bgcolor dp-bandeja-patas"></div>
+              </div>
+              </div></div>
+      </div>
+    </a>
+      <div class="grid-item">
+        <a class="el" href="#conocimiento"  (click)="activarAnimacion()">
+          <div class="ordenador">
+              <div class="ordenador-pantalla">
+                <div class="ordenador-pantalla-pantalla">
+                  <p class="ordenador-pantalla-texto">
+                  CONOCIMIENTOS 
+                  </p>
+                  </div>
+                <div>
+              <div class="ordenador-pantalla-pie"></div>
+              <div class="ordenador-pantalla-base"></div>
+              </div>
+              </div>
+              <div class="ordenador-cpu">
+                <div class="ordenador-cpu-caja">
+                <div class="ordenador-cpu-rendija"></div>
+                <div class="ordenador-cpu-rendija"></div>
+                <div class="ordenador-cpu-rendija"></div>
+                <div class="ordenador-cpu-rendija"></div>
+                <div class="ordenador-cpu-circulo"></div>
+                <div class="ordenador-cpu-botonera">
+                  <div class="ordenador-cpu-botonera-caja"></div>
+                  <div class="ordenador-cpu-botonera-caja"></div>
+                  <div class="ordenador-cpu-botonera-caja"></div>
+                </div>
+                  </div>
+        </div>
+        </div>
+        </a>
+      
+      </div>
+      <div class="grid-item">
+        <a class="co" href="#calle">
+        <div class="biblioteca">
+          <div class="biblioteca-libro">
+          
+              <p class="biblioteca-libro-texto">
+              <span style="font-size: 20px;">EXPERIENCIA</span> LABORAL  
+              </p>
+          
+          </div>
+        <div class="biblioteca-libros">
+          <div class="biblioteca-libros-caja">
+            <div class="biblioteca-libros-lomo azul"></div>
+            <div class="biblioteca-libros-paginas azul-paginas">
+            <hr style="margin-left: 10px;">
+            <hr style="margin-left: 10px;">
+            </div>
+            </div>
+            <div class="biblioteca-libros-caja" style="margin-left: -10px;">
+              <div class="biblioteca-libros-lomo marron"></div>
+              <div class="biblioteca-libros-paginas marron-paginas">
+              <hr style="margin-left: 10px;">
+              <hr style="margin-left: 10px;">
+            </div>
+              </div>
+        </div>
+        </div>
+      </a>
+      </div>  
+      <div class="grid-item mesa"></div> 
+      <div class="grid-item">
+        <div class="mesa-pata-izquierda"></div>
+      </div>
+      
+      <div class="grid-item"></div>
+
+      <div class="grid-item">
+        <div class="mesa-pata-derecha"></div>
+      </div>  
+
+          <div class="grid-item sombra"></div> 
+      </div>
+
+    </div>>
